@@ -12,7 +12,7 @@ const MainHeader = () => {
           <Image
             className="rounded-full hover:bg-rose-200 duration-500"
             width={60}
-            height={50}
+            height={60}
             src="/images/leks-bakehouse-logo.png"
             alt="Logo"
           />
