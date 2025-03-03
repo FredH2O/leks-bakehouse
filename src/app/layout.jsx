@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import "./globals.css";
 import MainHeader from "@/components/Header";
 import { Poppins, Pacifico } from "next/font/google";
@@ -22,9 +23,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable} ${pacifico.variable}`}>
-      <body className={`bg-rose-200 text-zinc-600 accent-rose-500`}>
+      <body
+        className={`bg-rose-200 text-zinc-600 accent-rose-500 flex flex-col min-h-screen`}
+      >
         <MainHeader />
-        {children}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
