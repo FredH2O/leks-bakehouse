@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaCheck } from "react-icons/fa";
 const certified = [
   "Certified HACCP 1, 2, and 3",
   "Allergen Awareness",
-  "HSE registered",
+  "HSE Registered",
 ];
 
 export default function Footer() {

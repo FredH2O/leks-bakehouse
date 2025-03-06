@@ -1,7 +1,14 @@
 import Footer from "@/components/Footer";
 import "./globals.css";
 import MainHeader from "@/components/Header";
-import { Poppins, Pacifico } from "next/font/google";
+import { Poppins, Pacifico, Modak } from "next/font/google";
+import Particles from "@/components/Particles";
+
+const modak = Modak({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-modak",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,10 +29,26 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${pacifico.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${pacifico.variable} ${modak.variable}`}
+    >
       <body
-        className={`bg-rose-200 text-zinc-600 accent-rose-500 flex flex-col min-h-screen`}
+        className={`relative bg-rose-200 text-zinc-600 accent-rose-500 flex flex-col min-h-screen`}
       >
+        {/* black shade 20 */}
+        <div className="absolute bg-black opacity-20 -z-10 inset-0">
+          <Particles
+            particleColors={["#ffffff", "#ffffff"]}
+            particleCount={500}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+          />
+        </div>
         <MainHeader />
         <main className="flex-1">{children}</main>
         <Footer />

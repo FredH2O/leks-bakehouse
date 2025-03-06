@@ -3,7 +3,8 @@
 import { useState } from "react";
 import BurgerMenu from "./BurgerMenu";
 import { X } from "lucide-react";
-const navigation = ["Home", "Products", "Contact"];
+
+const navigation = ["HOME", "PRODUCTS", "CONTACT"];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,13 +18,15 @@ const Navigation = () => {
       <BurgerMenu handleClick={handleClick} />
 
       <div
-        className={`fixed inset-0 bg-black transition-opacity duration-300 ${
-          isMenuOpen ? "visible opacity-50" : "invisible opacity-0"
+        className={`fixed inset-0 z-10 bg-black transition-opacity duration-300 ${
+          isMenuOpen
+            ? "visible opacity-50"
+            : "invisible opacity-0 pointer-events-none"
         }`}
       ></div>
 
       <div
-        className={`fixed h-full top-0 left-0 px-20 py-10 bg-slate-800 border-r border-sky-200 transition-transform duration-300 ${
+        className={`fixed h-full top-0 left-0 px-20 py-10 bg-slate-800 border-r z-10 border-sky-200 transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -45,10 +48,10 @@ const Navigation = () => {
         </ul>
       </div>
 
-      <ul className="lg:flex gap-5 hidden font-bold">
+      <ul className="lg:flex gap-5 hidden">
         {navigation.map((title, index) => (
           <li
-            className="rounded-sm py-1 px-3 cursor-pointer hover:bg-gray-200 hover:text-slate-900 transition-all ease-in duration-150"
+            className="py-1 px-3 cursor-pointer hover:border-b hover:bg-gray-50  border-pink-400 hover:text-slate-900 transition-all ease-in duration-150"
             key={index}
           >
             {title}

@@ -1,11 +1,15 @@
-import CircularGallery from "@/components/CircularGallery";
+import AboutSection from "@/components/AboutSection";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <>
-      <div style={{ height: "600px", position: "relative" }}>
-        <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
-      </div>
-    </>
+    <div className="">
+      {/* Hero */}
+      <HeroSection />
+      {/* About */}
+      <AboutSection />
+      {/* another component here */}
+      {/* another component here */}
+    </div>
   );
 }

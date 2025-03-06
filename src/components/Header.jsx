@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./Navigation";
 
-const navigation = ["Home", "Products", "Contact"];
-
 const MainHeader = () => {
   return (
     <header className="flex border-b border-zinc-400 bg-white p-1 justify-between items-center">
