@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
+import OrderNowSection from "@/components/OrderNowSection";
 
 export default function Home() {
   return (
@@ -8,8 +9,8 @@ export default function Home() {
       <HeroSection />
       {/* About */}
       <AboutSection />
-      {/* another component here */}
-      {/* another component here */}
+      {/* Order Now */}
+      <OrderNowSection />
     </div>
   );
 }

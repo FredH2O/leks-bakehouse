@@ -20,7 +20,7 @@ const HeroSection = () => {
   const bend = windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 0;
 
   return (
-    <div className="h-[700px] relative">
+    <div className="h-[800px] relative">
       <CircularGallery bend={bend} textColor="#ffffff" borderRadius={0.05} />
     </div>
   );
