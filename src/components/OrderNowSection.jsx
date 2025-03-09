@@ -3,11 +3,11 @@ import ScrollVelocity from "./ScrollVelocity";
 const OrderNowSection = () => {
   return (
     <section
-      className="relative bg-pink-200 h-screen bg-center bg-repeat"
+      className="relative bg-pink-200 h-screen bg-center bg-repeat overflow-hidden"
       style={{
         backgroundImage: "url(/images/transparent-img.png)",
-        backgroundSize: "500px", // Ensures the image maintains its original size
-        backgroundPosition: "center", // Ensures the image is centered in the section
+        backgroundSize: "500px",
+        backgroundPosition: "center",
       }}
     >
       <div className="absolute bg-black inset-0 opacity-50"></div>
