@@ -1,6 +1,6 @@
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import "./globals.css";
-import MainHeader from "@/components/Header";
+import MainHeader from "@/components/Header/Header";
 import { Poppins, Pacifico, Modak } from "next/font/google";
 import Particles from "@/components/Particles";
 

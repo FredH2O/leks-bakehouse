@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="py-12">
+    <section className="py-52">
       <div className="container mx-auto grid lg:grid-cols-2 items-center gap-8">
         {/* About Text */}
         <div className="flex flex-col text-center relative p-6">

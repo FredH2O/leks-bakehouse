@@ -1,7 +1,7 @@
-import AboutSection from "@/components/AboutSection";
-import HeroSection from "@/components/HeroSection";
-import Map from "@/components/Map";
-import OrderNowSection from "@/components/OrderNowSection";
+import AboutSection from "@/components/About/AboutSection";
+import HeroSection from "@/components/Hero/HeroSection";
+import Map from "@/components/Map/Map";
+import OrderNowSection from "@/components/OrderNowSection/OrderNowSection";
 
 export default function Home() {
   return (

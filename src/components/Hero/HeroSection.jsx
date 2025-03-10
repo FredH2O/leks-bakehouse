@@ -1,5 +1,5 @@
 "use client";
-import CircularGallery from "@/components/CircularGallery";
+import CircularGallery from "@/components/Hero/CircularGallery";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
