@@ -34,7 +34,7 @@ export const ScrollVelocity = ({
   className = "",
   damping = 50,
   stiffness = 400,
-  numCopies = 11,
+  numCopies = 5,
   velocityMapping = { input: [0, 1000], output: [0, 5] },
   parallaxClassName,
   scrollerClassName,
@@ -114,12 +114,9 @@ export const ScrollVelocity = ({
     }
 
     return (
-      <div
-        className={`${parallaxClassName} relative overflow-hidden`}
-        style={parallaxStyle}
-      >
+      <div className={`${parallaxClassName} relative`} style={parallaxStyle}>
         <motion.div
-          className={`${scrollerClassName} flex whitespace-nowrap text-center tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
+          className={`${scrollerClassName} flex text-center tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
           style={{ x, ...scrollerStyle }}
         >
           {spans}

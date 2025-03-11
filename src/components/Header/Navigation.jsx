@@ -8,6 +8,7 @@ const navigation = ["HOME", "PRODUCTS", "CONTACT"];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState("HOME");
 
   const handleClick = () => {
     setIsMenuOpen((prev) => !prev);
@@ -26,7 +27,7 @@ const Navigation = () => {
       ></div>
 
       <div
-        className={`fixed h-full top-0 left-0 px-20 py-10 bg-slate-800 border-r z-10 border-sky-200 transition-transform duration-300 ${
+        className={`fixed h-full top-0 left-0 px-20 py-10 bg-slate-800 border-r z-10 border-sky-200 transition-transform duration-150 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -51,7 +52,12 @@ const Navigation = () => {
       <ul className="lg:flex gap-5 hidden">
         {navigation.map((title, index) => (
           <li
-            className="py-1 px-3 cursor-pointer hover:border-b hover:bg-gray-50  border-pink-400 hover:text-slate-900 transition-all ease-in duration-150"
+            onClick={() => setActive(title)}
+            className={`py-1 px-3 cursor-pointer ${
+              active === title
+                ? "bg-rose-200 text-slate-900 rounded transition-all duration-300 ease-in"
+                : "null"
+            }`}
             key={index}
           >
             {title}

@@ -1,14 +1,39 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="py-52">
-      <div className="container mx-auto grid lg:grid-cols-2 items-center gap-8">
+    <section className="h-[1000px] lg:h-[700px]">
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 50 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        exit="hidden"
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ amount: 0.4 }}
+        className="container m-auto grid lg:grid-cols-2 place-items-center items-center gap-1"
+      >
+        {/* About Image */}
+        <div className="flex w-96  justify-center items-center">
+          <Image
+            className="rounded border-slate-300"
+            src="/images/about-logo.png"
+            alt="Lek's Bakehouse signature cake"
+            width={600}
+            height={300}
+          />
+        </div>
+
         {/* About Text */}
         <div className="flex flex-col text-center relative p-6">
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 -z-10 flex justify-center items-center">
             <svg
-              className="w-[400px] md:w-full"
+              className="w-full"
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -19,31 +44,20 @@ const AboutSection = () => {
               />
             </svg>
           </div>
+
           <div className="h-[500px] flex flex-col justify-center items-center">
-            <h2 className="lg:text-7xl text-6xl font-modak text-slate-900 mb-6 leading-tight">
+            <h2 className="xl:text-7xl md:text-6xl text-5xl font-modak text-slate-900 mb-6 leading-tight">
               Bringing Smiles, One Slice at a Time
             </h2>
-            <p className="text-lg text-zinc-900 px-6 leading-relaxed">
-              Lek's Bakehouse – homemade Filipino cakes & desserts in the heart
+            <p className="text-lg text-zinc-900 text-center p-1">
+              Lek's Bakehouse - homemade Filipino cakes & desserts in the heart
               of Lucan! 🎂✨ Perfect for birthdays, weddings, or sweet cravings.
               Bringing joy, tradition, and incredible flavors to every bite!
               🍰💛
             </p>
           </div>
         </div>
-
-        {/* About Image */}
-        <div className="flex justify-center">
-          <Image
-            className="rounded-xl shadow-xl border-4 border-white object-cover"
-            src="/images/about-me2.jpg"
-            alt="Lek's Bakehouse signature cake"
-            width={400}
-            height={400}
-            priority
-          />
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
