@@ -15,7 +15,7 @@ const AboutSection = () => {
         whileInView="visible"
         exit="hidden"
         transition={{ duration: 0.5, ease: "easeOut" }}
-        viewport={{ amount: 0.4 }}
+        viewport={{ amount: 0.3 }}
         className="container m-auto grid lg:grid-cols-2 place-items-center items-center gap-1"
       >
         {/* About Image */}

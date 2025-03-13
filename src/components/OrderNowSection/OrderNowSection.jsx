@@ -3,7 +3,7 @@ import ScrollVelocity from "./ScrollVelocity";
 const OrderNowSection = () => {
   return (
     <section
-      className="relative bg-pink-200 h-screen bg-center bg-repeat"
+      className="relative bg-pink-200 h-screen bg-center bg-repeat border-y-2 border-black"
       style={{
         backgroundImage: "url(/images/transparent-img.png)",
         backgroundSize: "500px",

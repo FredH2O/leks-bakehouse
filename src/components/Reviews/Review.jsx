@@ -52,9 +52,10 @@ const Review = () => {
             }}
             className="text-left max-w-lg space-y-1"
           >
-            <p className="italic text-xl bg-slate-100 rounded-ss-xl rounded-se-xl rounded-ee-xl p-3">
+            <p className="italic text-xl border border-slate-400 bg-slate-100 rounded-ss-xl rounded-se-xl rounded-ee-xl p-3">
               "{reviews[index].review}"
             </p>
+
             <p className="font-bold text-lg">-{reviews[index].name}</p>
           </motion.div>
         </AnimatePresence>
