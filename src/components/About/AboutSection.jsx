@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section className="h-[1000px] lg:h-[700px]">
+    <section className="min-h-screen flex flex-col justify-center items-center">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: -50 },
@@ -19,7 +19,7 @@ const AboutSection = () => {
         className="container m-auto grid lg:grid-cols-2 place-items-center items-center gap-1"
       >
         {/* About Image */}
-        <div className="flex w-96  justify-center items-center">
+        <div className="flex justify-center items-center">
           <Image
             className="rounded border-slate-300"
             src="/images/about-logo.png"

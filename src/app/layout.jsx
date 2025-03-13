@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       className={`${poppins.variable} ${pacifico.variable} ${modak.variable}`}
     >
       <body
-        className={`relative font-poppins bg-rose-200 text-zinc-600 accent-rose-500 flex flex-col min-h-screen`}
+        className={`relative font-poppins bg-gradient-to-br to-rose-200 from-pink-100 text-zinc-600 accent-rose-500 flex flex-col min-h-screen`}
       >
         {/* black shade 20 */}
         <div className="absolute bg-black opacity-20 -z-10 inset-0">

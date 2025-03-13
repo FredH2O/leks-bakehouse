@@ -8,11 +8,8 @@ import Review from "@/components/Reviews/Review";
 export default function Home() {
   return (
     <div className="">
-      {/* Hero */}
       <HeroSection />
-      {/* About */}
       <AboutSection />
-      {/* Order Now */}
       <LoyaltyCard />
       <OrderNowSection />
       <Map />

@@ -34,13 +34,13 @@ const LoyaltyCard = () => {
         whileInView="visible"
         exit="hidden"
         transition={{ duration: 0.5, ease: easeInOut }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ amount: 0.3 }}
         className="relative py-10 bg-pink-200 rounded-se-[50px] rounded-ss-[50px]"
       >
         <div className="container m-auto grid lg:grid-cols-2 justify-center place-items-center py-10">
           <div className="flex flex-col gap-5 justify-center items-center">
             <h2 className="text-slate-50 text-shadow-black text-6xl font-modak text-center">
-              Sylvanas Loyalty Card
+              Silvanas Loyalty Card
             </h2>
             <div className="p-1">
               <Image
@@ -56,7 +56,7 @@ const LoyaltyCard = () => {
           <div>
             <p className="lg:text-3xl text-lg text-slate-700 text-center py-10">
               Purchase a set of{" "}
-              <span className="font-semibold">9 Boxes of Sylvanas</span> and
+              <span className="font-semibold">9 Boxes of Silvanas</span> and
               enjoy a{" "}
               <span className="text-red-600 italic">
                 10th box absolutely free
