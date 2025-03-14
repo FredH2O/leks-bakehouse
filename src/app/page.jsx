@@ -1,4 +1,5 @@
 import AboutSection from "@/components/About/AboutSection";
+import MainCounter from "@/components/CountUp/MainCounter";
 import HeroSection from "@/components/Hero/HeroSection";
 import LoyaltyCard from "@/components/LoyaltyCard/LoyaltyCard";
 import Map from "@/components/Map/Map";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <LoyaltyCard />
       <OrderNowSection />
+      <MainCounter />
       <Map />
       <Review />
     </div>
