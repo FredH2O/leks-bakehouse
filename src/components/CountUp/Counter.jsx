@@ -20,11 +20,11 @@ const Counter = ({ title, start, finish, className }) => {
         initial="hidden"
         exit="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.9 }}
+        viewport={{ amount: 0.3 }}
       >
         {inView && (
           <>
-            <p>{title}</p>
+            <p className="font-bold">{title}</p>
             <CountUp
               from={start}
               to={finish}

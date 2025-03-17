@@ -2,7 +2,7 @@ import Counter from "./Counter";
 
 const data = [
   {
-    title: "Occassions Served",
+    title: "Occassions",
     start: 0,
     finish: 82,
   },
@@ -25,9 +25,9 @@ const data = [
 
 const MainCounter = () => {
   return (
-    <div className="border bg-white border-black border-b-2 flex justify-evenly h-[100px]">
+    <div className="border-y-4 grid justify-center place-items-center md:grid-cols-4 grid-cols-2 gap-3 p-6 bg-white border-black h-auto">
       {data.map((info, index) => (
-        <div className="text-center" key={index}>
+        <div className="text-center p-1" key={index}>
           <Counter
             className="text-6xl"
             title={info.title}

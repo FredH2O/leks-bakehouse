@@ -12,8 +12,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <LoyaltyCard />
-      <OrderNowSection />
       <MainCounter />
+      <OrderNowSection />
       <Map />
       <Review />
     </div>
