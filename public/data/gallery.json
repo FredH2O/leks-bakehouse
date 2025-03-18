@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Ube Sansrival",
+    "price": "",
+    "image": "/gallery/cake1.jpg",
+    "description": "A decadent Filipino dessert made with layers of crunchy cashew, creamy buttercream, and infused with rich ube flavor."
+  },
+  {
+    "id": 2,
+    "name": "Sylvanas Cookies",
+    "price": "",
+    "image": "/gallery/cake2.jpg",
+    "description": "Crisp and buttery frozen cashew-meringue cookies filled with luscious buttercream, a classic Filipino treat."
+  },
+  {
+    "id": 3,
+    "name": "Pistachio Sansrival",
+    "price": "",
+    "image": "/gallery/cake3.jpg",
+    "description": "A luxurious layered cake made with pistachio, silky buttercream, and a nutty crunch in every bite."
+  },
+  {
+    "id": 4,
+    "name": "Birthday Cake",
+    "price": "",
+    "image": "/gallery/cake4.jpg",
+    "description": "Custom-made just as requested—pretty in pink and perfect for the birthday girl! 💕🎂"
+  },
+  {
+    "id": 5,
+    "name": "Birthday Cake",
+    "price": "",
+    "image": "/gallery/cake5.jpg",
+    "description": "Happy 2nd Birthday, Romy! Celebrating with an amazing Ube Macapuno Ice Cream-themed Cake! 🎂🍦💜"
+  },
+  {
+    "id": 6,
+    "name": "Birthday Cake",
+    "price": "",
+    "image": "/gallery/cake6.jpg",
+    "description": "Crafted a special birthday cake: sugar paste flowers, rich chocolate base, and smooth ganache and a custom cake topper by @createddyti. Thank you for your order! 🌸🌷"
+  },
+  {
+    "id": 7,
+    "name": "Birthday Cake",
+    "price": "",
+    "image": "/gallery/cake7.jpg",
+    "description": "Minimalist on the outside, bursting with strawberry goodness on the inside! 🍓🎂"
+  },
+  {
+    "id": 8,
+    "name": "Wedding Cake",
+    "price": "",
+    "image": "/gallery/cake8.jpg",
+    "description": "Love is the sweetest ingredient. ❤️🎂 Congratulations to the newlyweds! 🥂"
+  },
+  {
+    "id": 9,
+    "name": "Coffee Sansrival",
+    "price": "",
+    "image": "/gallery/cake9.jpg",
+    "description": "Celebrate sweet moments with our Coffee Sans Rival!"
+  },
+  {
+    "id": 10,
+    "name": "Caramel Cake",
+    "price": "",
+    "image": "/gallery/cake10.jpg",
+    "description": "Made with love for my brother’s birthday—his favorite caramel cake! Wishing you the sweetest day! 🎂💛"
+  },
+  {
+    "id": 11,
+    "name": "Christening Cake",
+    "price": "",
+    "image": "/gallery/cake11.jpg",
+    "description": "Soft hues, rich flavors 💜 Minimalist Ube Macapuno Cake designed to celebrate life’s precious milestones."
+  },
+  {
+    "id": 12,
+    "name": "Birthday Cake",
+    "price": "",
+    "image": "/gallery/cake12.jpg",
+    "description": "Celebrating my favorite artist’s birthday with a special cake! His recent portrait paintings are printed on this buttercream and toffee crunch delight."
+  }
+]

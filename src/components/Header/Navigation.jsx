@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const nav = [
   { title: "HOME", link: "/" },
-  { title: "PRODUCTS", link: "/products" },
+  { title: "GALLERY", link: "/gallery" },
   { title: "CONTACT", link: "/contact" },
 ];
 
