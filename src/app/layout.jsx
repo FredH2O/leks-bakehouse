@@ -23,8 +23,29 @@ const pacifico = Pacifico({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://your-vercel-site-url.com"), //actual domain here
   title: "Lek's Bakehouse",
   description: "Freshly made cakes and treats.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Lek's Bakehouse - Freshly Made Desserts",
+    description: "Delicious homemade cakes and treats.",
+    url: "https://your-vercel-site-url.com", // Replace with your real website URL,
+    siteName: "Lek's Bakehouse",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lek's Bakehouse - Delicious Treats",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

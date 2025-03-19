@@ -55,7 +55,7 @@ const LoyaltyCard = () => {
 
           <div>
             <p className="lg:text-3xl text-lg text-slate-700 text-center py-10">
-              Purchase a set of{" "}
+              Purchase{" "}
               <span className="font-semibold">9 Boxes of Silvanas</span> and
               enjoy a{" "}
               <span className="text-red-600 italic">

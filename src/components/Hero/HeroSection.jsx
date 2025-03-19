@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col lg:flex-row items-center justify-evenly min-h-screen px-6 lg:px-20 bg-gradient-to-br from-pink-100 to-rose-200">
+    <section className="relative py-10 flex flex-col lg:flex-row items-center justify-evenly min-h-screen px-6 lg:px-20 bg-gradient-to-br from-pink-100 to-rose-200">
       {/* Left Side - Text */}
       <motion.div
         className="max-w-2xl text-center lg:text-left"
