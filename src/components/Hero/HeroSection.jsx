@@ -25,9 +25,12 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
-          <button className="px-6 py-3 bg-rose-500 text-white rounded-lg font-semibold shadow-lg hover:bg-rose-600 transition">
-            <a href="mailto:leksbakehouse@gmail.com">Order Now</a>
-          </button>
+          <a
+            href="mailto:leksbakehouse@gmail.com"
+            className="px-6 py-3 bg-rose-500 text-white rounded-lg font-semibold shadow-lg hover:bg-rose-600 transition text-center"
+          >
+            Order Now
+          </a>
         </div>
       </motion.div>
 
