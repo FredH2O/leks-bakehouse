@@ -55,7 +55,7 @@ const ContactForm = () => {
       !formData.name ||
       !formData.email ||
       !formData.message ||
-      !formData.message.length < 10
+      formData.message.length < 10
     ) {
       alert("All fields are required.");
       return;
@@ -70,7 +70,10 @@ const ContactForm = () => {
 
   return (
     <form
-      onSubmit={handleSubmit}
+      action="mailto:huertaserick@yahoo.ie"
+      method="GET"
+      encType="text/plain"
+      // onSubmit={handleSubmit}
       className="flex flex-col p-4 border max-w-md w-full gap-2"
     >
       <label htmlFor="name" className="text-xl font-bold">

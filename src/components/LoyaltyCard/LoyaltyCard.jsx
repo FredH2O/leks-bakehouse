@@ -37,24 +37,25 @@ const LoyaltyCard = () => {
         viewport={{ amount: 0.3 }}
         className="relative py-10 bg-pink-200 rounded-se-[50px] rounded-ss-[50px]"
       >
-        <div className="container m-auto grid lg:grid-cols-2 justify-center place-items-center py-10">
+        <div className="container m-auto grid xl:grid-cols-2 justify-center place-items-center py-10">
           <div className="flex flex-col gap-5 justify-center items-center">
             <h2 className="text-slate-50 text-shadow-black text-6xl font-modak text-center">
               Silvanas Loyalty Card
             </h2>
             <div className="p-1">
               <Image
-                className="rounded border border-slate-800"
+                className="rounded-lg border-2 border-slate-800"
                 src="/images/loyalty-card.jpg"
                 width={500}
                 height={500}
                 alt="Loyalty Card"
+                priority
               />
             </div>
           </div>
 
-          <div>
-            <p className="lg:text-3xl text-lg text-slate-700 text-center py-10">
+          <div className="py-6 px-5 m-1">
+            <p className="lg:text-3xl text-lg text-slate-700 text-center">
               Purchase{" "}
               <span className="font-semibold">9 Boxes of Silvanas</span> and
               enjoy a{" "}
@@ -79,7 +80,7 @@ const LoyaltyCard = () => {
               animationStagger={0.08}
               easeType="elastic.out(0.6, 0.5)"
               transformStyles={transformStyles}
-              enableHover={false}
+              enableHover={true}
             />
           )}
         </div>

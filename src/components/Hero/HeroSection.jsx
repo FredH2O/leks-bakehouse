@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-10 flex flex-col lg:flex-row items-center justify-evenly min-h-screen px-6 lg:px-20 bg-gradient-to-br from-pink-100 to-rose-200">
+    <section className="relative py-10 flex flex-col xl:flex-row items-center justify-evenly min-h-screen px-6 lg:px-20 bg-gradient-to-br from-pink-100 to-rose-200">
       {/* Left Side - Text */}
       <motion.div
-        className="max-w-2xl text-center lg:text-left"
+        className="max-w-2xl text-center xl:text-left"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -24,18 +24,15 @@ const HeroSection = () => {
           with love and the finest ingredients.
         </p>
 
-        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
           <button className="px-6 py-3 bg-rose-500 text-white rounded-lg font-semibold shadow-lg hover:bg-rose-600 transition">
-            Order Now
-          </button>
-          <button className="px-6 py-3 border border-rose-500 text-rose-700 rounded-lg font-semibold shadow-lg hover:bg-rose-100 transition">
-            View Cakes
+            <a href="mailto:leksbakehouse@gmail.com">Order Now</a>
           </button>
         </div>
       </motion.div>
 
       <motion.div
-        className="mt-10 lg:mt-0"
+        className="mt-10 xl:mt-0"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}

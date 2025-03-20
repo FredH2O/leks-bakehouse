@@ -8,7 +8,7 @@ import Link from "next/link";
 const nav = [
   { title: "HOME", link: "/" },
   { title: "GALLERY", link: "/gallery" },
-  { title: "CONTACT", link: "/contact" },
+  // { title: "CONTACT", link: "/contact" },
 ];
 
 const Navigation = () => {

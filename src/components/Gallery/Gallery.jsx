@@ -19,7 +19,7 @@ const Gallery = () => {
     fetchData();
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-8">
       <AnimatePresence>
         {gallery.map((product) => (
           <motion.div
@@ -49,9 +49,9 @@ const Gallery = () => {
                 {/* <span className="text-lg font-bold text-gray-900">
                 {product.price}
               </span> */}
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
                   Order Now
-                </button>
+                </button> */}
               </div>
             </div>
           </motion.div>

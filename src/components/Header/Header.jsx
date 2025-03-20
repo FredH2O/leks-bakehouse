@@ -4,8 +4,8 @@ import Navigation from "./Navigation";
 
 const MainHeader = () => {
   return (
-    <header className="flex border-b border-zinc-400 bg-white p-1 justify-between items-center">
-      <div className="flex gap-3 items-center ml-2">
+    <header className="flex border-b border-slate-800 bg-white p-1 justify-between items-center">
+      <div className="flex gap-3 items-center w-full">
         <Link href="/">
           <Image
             className="rounded-full hover:bg-rose-200 duration-500"
@@ -15,10 +15,13 @@ const MainHeader = () => {
             alt="Logo"
           />
         </Link>
-        <h2 className="font-pacifico text-2xl">Lek's Bakehouse</h2>
+        <div className="w-full md:text-left text-center">
+          <h2 className="font-pacifico text-2xl">Lek's Bakehouse</h2>
+        </div>
       </div>
-
-      <Navigation />
+      <div className="">
+        <Navigation />
+      </div>
     </header>
   );
 };
