@@ -23,7 +23,7 @@ const pacifico = Pacifico({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://your-vercel-site-url.com"), //actual domain here
+  metadataBase: new URL("https://leks-bakehouse.vercel.app"),
   title: "Lek's Bakehouse",
   description: "Freshly made cakes and treats.",
   icons: {
@@ -35,7 +35,7 @@ export const metadata = {
   openGraph: {
     title: "Lek's Bakehouse - Freshly Made Desserts",
     description: "Delicious homemade cakes and treats.",
-    url: "https://your-vercel-site-url.com", // Replace with your real website URL,
+    url: "https://leks-bakehouse.vercel.app", // Replace with your real website URL,
     siteName: "Lek's Bakehouse",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="en-IE"
       className={`${poppins.variable} ${pacifico.variable} ${modak.variable}`}
     >
       <body

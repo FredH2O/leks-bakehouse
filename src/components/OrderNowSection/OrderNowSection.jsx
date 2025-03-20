@@ -31,7 +31,7 @@ const OrderNowSection = () => {
             onClick={console.log("buttons click for order")}
             className="bg-sky-400 border border-slate-400 tracking-widest w-[250px] hover:bg-sky-500 hover:-translate-y-1 transition-all ease-out duration-300 text-slate-900 hover:text-slate-100 px-6 py-3 rounded shadow-2xl"
           >
-            ORDER HERE
+            <a href="mailto:leksbakehouse@gmail.com">ORDER HERE</a>
           </button>
         </div>
       </div>
