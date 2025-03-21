@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lek's Bakehouse Website
+
+This is a professional website for **Lek's Bakehouse**, an artisan dessert business. The website showcases the bakery's offerings, highlights its expertise, and provides a way for customers to get in touch.
+
+## Tech Stack
+
+- **Next.js** - Framework for building a fast and scalable React web application.
+- **Tailwind CSS** - Utility-first CSS framework for styling.
+- **Vercel** - Hosting and deployment platform.
+- **React Icons** - For adding scalable vector icons.
+- **Form Handling (Planned)** - Likely using Formspree, Resend API, or Zapier for customer inquiries.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/leks-bakehouse.git
+   cd leks-bakehouse
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The website is deployed on **Vercel** for seamless performance and scalability. Any updates pushed to the main branch will automatically trigger a new deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Implement a contact form for customer inquiries.
+- Add a gallery section to showcase the bakery's best work.
+- Optimize SEO for better visibility.
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is currently private and managed by the developer. If you have suggestions or feedback, feel free to reach out.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ for Lek's Bakehouse.
